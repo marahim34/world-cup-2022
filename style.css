@@ -183,7 +183,49 @@ footer p a {
     font-size: 900;
 }
 
+/* match */
 
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    padding-left: 30px;
+    margin-left: 40px;
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+.group-match {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    border: 1px solid #2c5f2dff;
+    ;
+}
+
+
+.match {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.match img {
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+}
+
+h5 {
+    color: #2c5f2dff;
+    font-size: 18px;
+    text-align: center;
+}
 
 /* responsiveness */
 
@@ -288,6 +330,16 @@ footer p a {
         width: 100%;
     }
 
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        padding-left: 0px;
+        margin-left: 10px;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
     .invisible-view {
         visibility: visible;
         background-color: #2c5f2dff;
@@ -305,53 +357,6 @@ footer p a {
         text-decoration: none;
         color: #ffe77aff;
     }
-}
-
-/* match */
-
-.matches {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 60%;
-    float: right;
-
-}
-
-.match-color {
-    border: 1px solid #2c5f2dff;
-    margin-top: -320px;
-    gap: 3px;
-}
-
-.match {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 40px;
-    width: 100%;
-}
-
-aside {
-    float: left;
-    width: 30%;
-    background-color: #2c5f2dff;
-    width: 300px;
-    height: 325px;
-    border-radius: 10px;
-    align-items: center;
-    padding-top: 3px;
-    float: left;
-    margin-top: 10px;
-}
-
-.date {
-    text-align: center;
-}
-
-h5 {
-    color: #2c5f2dff;
-    font-size: 18px;
-    text-align: center;
 }
 
 
@@ -445,6 +450,14 @@ h5 {
 
     .article img {
         width: 100%;
+    }
+
+    .matches {
+        display: inline-block;
+        width: 80%;
+        padding-left: 0px;
+        margin-left: 0px;
+        justify-content: center;
     }
 
     footer {
